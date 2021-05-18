@@ -92,9 +92,9 @@
                             <input type="text" class="form-control" id="audience" value="">
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="issuer">Issuer</label>
+                            <label class="control-label" for="issuer">Issuer sig</label>
                             <input type="text" class="form-control" id="issuer"
-                                   value="https://easygenerator.github.io/samling/samling.html">
+                                   value="http://samling.local/samling.html">
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="samlStatusCode">SAML Status Code</label>
@@ -262,7 +262,7 @@ attr2=value2"></textarea>
                         <h2 id="signedInUser"></h2>
                         <h5>You have signed in at: <b id="signedInAt">You have not signed in yet.</b></h5>
                         <div style="margin-top: 32px;">
-                            <a class="btn btn-default" href="https://easygenerator.github.io/samling/samling.html#"
+                            <a class="btn btn-default" href="http://samling.local/samling.html#"
                                role="button" id="signedInLogout">Logout</a>
                         </div>
                     </div>
@@ -291,7 +291,7 @@ attr2=value2"></textarea>
                     <p>
                     </p>
                     <pre id="idpMetadata" style="text-overflow: auto">&lt;?xml version="1.0"?&gt;
-&lt;md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://easygenerator.github.io/samling/samling.html"&gt;
+&lt;md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="http://samling.local/samling.html"&gt;
   &lt;md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"&gt;
     &lt;md:KeyDescriptor use="signing"&gt;
       &lt;ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"&gt;
@@ -300,14 +300,14 @@ attr2=value2"></textarea>
         &lt;/ds:X509Data&gt;
       &lt;/ds:KeyInfo&gt;
     &lt;/md:KeyDescriptor&gt;
-    &lt;md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://easygenerator.github.io/samling/samling.html"/&gt;
+    &lt;md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://samling.local/samling.html"/&gt;
     &lt;md:NameIDFormat&gt;urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress&lt;/md:NameIDFormat&gt;
-    &lt;md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://easygenerator.github.io/samling/samling.html"/&gt;
+    &lt;md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://samling.local/samling.html"/&gt;
   &lt;/md:IDPSSODescriptor&gt;
 &lt;/md:EntityDescriptor&gt;</pre>
                     <p></p>
                     <p>
-                        <a class="btn btn-primary pull-right" href="https://easygenerator.github.io/samling/samling.html#"
+                        <a class="btn btn-primary pull-right" href="http://samling.local/samling.html#"
                            role="button" id="copyMetadata" data-toggle="tooltip" title="" data-trigger="manual"
                            data-placement="top" data-original-title="Copied">Copy Metadata</a>
                     </p>
